@@ -89,7 +89,7 @@
   }
 
   &.operator {
-    color: lighten(@syntax-keyword, 20%);
+    color: lighten(@syntax-keyword, 10%);
   }
 
   &.other.special-method {
@@ -97,7 +97,7 @@
   }
 
   &.other.unit {
-    color: @orange;
+    color: lighten(@syntax-keyword, 10%);
   }
 }
 
@@ -106,14 +106,14 @@
 }
 
 .constant {
-  color: @blue;
+  color: @syntax-variable-constant-color;
 
   &.character.escape {
     color: @cyan;
   }
 
   &.numeric {
-    color: @cyan;
+    color: @syntax-variable-constant-color;
   }
 
   &.other.color {
@@ -121,7 +121,7 @@
   }
 
   &.other.symbol {
-    color: @blue;
+    color: @syntax-constant-symbol-color;
   }
 }
 
@@ -135,6 +135,10 @@
   &.parameter.function {
     color: @syntax-variable-color;
   }
+
+  &.constant {
+    color: @syntax-variable-constant-color;
+  }
 }
 
 .invalid.illegal {
@@ -147,10 +151,14 @@
 
 
   &.regexp {
-    color: @cyan;
+    color: @red;
 
     .source.ruby.embedded {
       color: @red;
+    }
+
+    .character.escape {
+      color: darken(@red, 8%);
     }
   }
 
@@ -167,6 +175,10 @@
 
     &.string {
       color: darken(@green, 20%);
+    }
+
+    &.constant {
+      color: @syntax-constant-symbol-color;
     }
 
     &.variable,
@@ -225,7 +237,7 @@
   }
 
   &.name.tag {
-    color: @red;
+    color: @light-orange;
     text-decoration: underline;
   }
 
@@ -233,7 +245,7 @@
     color: @light-orange;
 
     &.id {
-      color: @blue;
+      color: @light-orange;
     }
   }
 }
