@@ -1,0 +1,11 @@
+{
+  "name": "ychaker-syntax",
+  "theme": "syntax",
+  "version": "0.0.1",
+  "description": "A RailsCasts inspired syntax theme with some modifications",
+  "repository": "https://github.com/ychaker/ychaker-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
