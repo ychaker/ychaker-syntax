@@ -26,6 +26,16 @@
 
 // For git diff info. i.e. in the gutter
 @syntax-color-renamed: @blue;
-@syntax-color-added: @green;
-@syntax-color-modified: @orange;
+@syntax-color-added: @dark-green;
+@syntax-color-modified: @light-green;
 @syntax-color-removed: @red;
+
+// Comments
+@syntax-comment-color: @maroon;
+@syntax-comment-punctuation-color: @syntax-comment-color;
+
+// Languages
+@syntax-entity-type-color: lighten(@blue, 10%);
+@syntax-entity-type-inherited-color: darken(@blue, 10%);
+@syntax-keyword: @red;
+@syntax-variable-color: @blue;
