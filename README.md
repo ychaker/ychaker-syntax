@@ -1,5 +1,7 @@
 # My own RailsCasts inspired theme
 
-A short description of your theme.
+Started off with the Atom fork of the RailsCasts theme, then switched the orange to different shades of red.
 
-![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
+Check it out if interested:
+
+![Theme Screenshot](https://raw.github.com/ychaker/ychaker-syntax/master/screenshot.png)
